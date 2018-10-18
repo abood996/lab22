@@ -12,15 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+
+
+    $data=[
+        't1',
+         't2',
+         't3'];
+
+
+    return view('welcome',compact ('data') );
+
+
+
 });
 
-
-Route::get('about', function () {
-    return view('about');
-});
-
-
-Route::get('about/hello', function () {
-    return view('about.hello');
-});
